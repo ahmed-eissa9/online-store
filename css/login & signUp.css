@@ -1,0 +1,105 @@
+:root {
+    --main-color: #ff8716;
+    --p-color: #7b7b7b;
+    --bg-color: #f3f3f3;
+    --white-color: #fff;
+    --heading-color: #121416;
+    --border-color: #e5e5e5d5;
+    --Sale-color: #E51A1A;
+}
+
+
+.form_sec {
+    padding-top: 130px;
+}
+ 
+.form_sec .continer {
+    width: 400px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+    margin: 50px auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    box-sizing: border-box;
+}
+
+.form_sec .continer h2 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.form_sec .continer input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+}
+
+.form_sec .continer p {
+    text-align: end;
+    font-size: 13px;
+    color: var(--parg-color);
+    margin-bottom: 10px;
+}
+
+.form_sec .continer .btn_apple_google {
+    display: block;
+    text-align: center;
+    
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.form_sec .continer span {
+    display: block;
+    font-size: 15px;
+    color: var(--parg-color);
+    margin-bottom: 10px;
+    margin-top: 4px;
+    font-size: 13px;
+}
+
+.form_sec .continer span a { 
+    color: var(--main-color);
+    text-decoration: underline var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Responsive */
+@media (max-width: 1100px) {
+    .form_sec {
+        padding-top: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    .form_sec .continer {
+        width: 90%;
+    }
+}

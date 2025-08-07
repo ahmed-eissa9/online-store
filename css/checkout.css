@@ -1,0 +1,268 @@
+:root {
+    --main-color: #ff8716;
+    --p-color: #7b7b7b;
+    --bg-color: #f3f3f3;
+    --white-color: #fff;
+    --heading-color: #121416;
+    --border-color: #e5e5e5d5;
+    --Sale-color: #E51A1A;
+}
+
+.checkout {
+    padding-top: 150px;
+}
+
+
+.checkout .continer .order_summaray .item_order {
+    padding: 10px 0;
+    margin: 10px 0;
+    border-top: 1px solid var(--border-color) ;
+    border-bottom: 1px solid var(--border-color) ;
+    height: 44vh;
+    overflow-y: scroll;
+}
+
+.item_order::-webkit-scrollbar {
+    display: none;
+}
+
+.checkout .continer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.checkout .continer .form_address {
+    width: 45%;
+}
+
+.checkout .continer .form_address .coupon_code {
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.checkout .continer .form_address .address {
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.checkout .continer .form_address h2 {
+    font-size: 20px ;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+.checkout .continer .form_address form { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.checkout .continer .form_address form label {
+    font-size: 15px;
+    color: var(--parg-color);
+    margin-bottom: 4px;
+}
+
+.checkout .continer .form_address form input {
+    padding: 10px 0 10px 10px ;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    border-radius: 5px;
+}
+.checkout .continer .form_address form input::placeholder {
+    font-size: 11px;
+}
+
+.checkout .continer .form_address form input:focus {
+    border-color: var(--main-color);
+}   
+
+/* order summaray */
+.checkout .continer .order_summaray {
+    background-color: #fff;border-radius: 5px;
+    padding: 15px 20px;
+    border: 1px solid var(--border-color);
+    width: 45%;
+}
+
+.checkout .continer .order_summaray .order_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    margin-bottom: 5px;
+    padding-bottom: 5px ;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.checkout .continer .order_summaray .order_item:last-child {
+    border-bottom: none;
+}
+
+.checkout .continer .order_summaray h2 {
+    color: var(--main-color);
+}
+
+.checkout .continer .order_summaray .prices {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 1px solid var(--border-color);
+    padding: 6px 0;
+    margin-bottom: 5px;
+    text-transform:capitalize ;
+}
+
+.checkout .continer .order_summaray .prices h5 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: norma;
+}
+
+.checkout .continer .order_summaray .prices h5 .price_order {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+.checkout .continer .form_address form .btn_cop, 
+.checkout .continer .order_summaray .btn_sum {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+    margin-top: 8px;
+}
+
+.checkout .continer .form_address form .btn_cop {
+    width: 50%;
+    margin: auto;
+}   
+
+.checkout .continer .order_summaray .btn_sum:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--heading-color);
+}
+
+footer {
+    margin-top: 60px ;
+}
+
+
+.checkout .continer .order_summaray .item_order .order_item img {
+    width: 70px;
+}
+
+.checkout .continer .order_summaray .item_order .order_item .name_item_in_cart {
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+}
+
+.checkout .continer .order_summaray .item_order .order_item .price_item_in_cart {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.checkout .continer .order_summaray .item_order .order_item .plus_minus {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.checkout .continer .order_summaray .item_order .order_item  .pm {
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    padding: 3px 6px;
+    font-size: 16px;
+}
+
+.checkout .continer .order_summaray .item_order .order_item  .num {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+
+.checkout .continer .order_summaray .item_order .order_item .fa-trash {
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.checkout .continer .order_summaray .item_order .order_item .fa-trash:hover {
+    scale: 1.05;
+    color: red;
+}
+
+
+
+/** Rsponsive */
+@media (max-width: 900px) {
+    .checkout .continer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+        padding-top: 70px;
+    }
+    .checkout .continer .form_address {
+        width: 80%;
+    }
+    .checkout .continer .order_summaray {
+        width: 80%;
+    }
+}
+
+@media (max-width: 550px) {
+    .checkout .continer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+    .checkout .continer .form_address {
+        width: 100%;
+    }
+    .checkout .continer .order_summaray {
+        width: 100%;
+    }
+    .checkout .continer .form_address form .btn_cop {
+        font-size: 14px;
+    }
+    .checkout .continer .form_address form .btn_cop, .checkout .continer .order_summaray .btn_sum {
+        font-size: 14px;
+    }
+    .checkout .continer .form_address h2 {
+        font-size: 17px;
+    }
+    .checkout .continer .order_summaray h2 {
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,57 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "inter" , sans-serif;
+    color: var(--heading-color);
+}
+
+:root {
+    --main-color: #ff8716;
+    --p-color: #7b7b7b;
+    --bg-color: #f3f3f3;
+    --white-color: #fff;
+    --heading-color: #121416;
+    --border-color: #e5e5e5d5;
+    --Sale-color: #E51A1A;
+}
+
+
+span {
+    color: var(main);
+}
+
+p {
+    color: var(--p-color);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--heading-color);
+    font-family: "Dm Sans" , sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+input,select,button {
+    border: none;
+    outline: none;
+}
+
+.continer {
+    width: 75%;
+    margin: auto;
+    max-width: 1350px;
+}
+@media (max-width: 1350px ) {
+  .continer {
+    width: 90%;
+   }
+}
+
